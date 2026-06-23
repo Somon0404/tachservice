@@ -3,196 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ТачСервис — Ремонт компьютеров и ноутбуков</title>
+<title>Сомон — ТачСервис</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-    font-family:Segoe UI,Arial,sans-serif;
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.6;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6f8;
+color:#222;
 }
 
 header{
-    background:linear-gradient(135deg,#0066cc,#0099ff);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+background:linear-gradient(135deg,#0066cc,#00aaff);
+color:white;
+padding:70px 20px;
+text-align:center;
 }
 
 header h1{
-    font-size:48px;
-    margin-bottom:10px;
+font-size:42px;
+margin-bottom:10px;
 }
 
 header p{
-    font-size:20px;
-    margin-bottom:25px;
-}
-
-.btn{
-    display:inline-block;
-    background:white;
-    color:#0066cc;
-    padding:14px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
+font-size:18px;
+max-width:800px;
+margin:auto;
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:30px;
-    font-size:32px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+max-width:1000px;
+margin:auto;
+padding:30px 20px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.card h3{
-    margin-bottom:10px;
-    color:#0066cc;
+h2{
+color:#0066cc;
+margin-top:0;
 }
 
-.price{
-    font-size:24px;
-    font-weight:bold;
-    color:#00aa55;
+ul{
+padding-left:20px;
 }
 
-.about{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+li{
+margin-bottom:8px;
 }
 
-.contact{
-    background:#0066cc;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-
-.contact h2{
-    margin-bottom:20px;
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#0066cc;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
 }
 
 footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+margin-top:30px;
 }
 
-@media(max-width:600px){
-header h1{
-font-size:34px;
-}
+.profi-widget{
+margin-top:15px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>ТачСервис</h1>
-<p>Профессиональный ремонт компьютеров и ноутбуков</p>
+<h1>Сомон — ТачСервис</h1>
+<p>
+Мастер по ремонту компьютеров и ноутбуков с опытом 9 лет.  
+Честная работа, гарантия и быстрый выезд на дом.
+</p>
 
-<a class="btn" href="https://t.me/ВАШ_ТЕЛЕГРАМ">
-Написать в Telegram
-</a>
+<a class="btn" href="https://t.me/yourtelegram">Написать в Telegram</a>
+
+<!-- Profi.ru widget -->
+<div class="profi-widget" data-id="cfddc839598957ae248623647ec3a476" data-type="300x100">
+Powered by <a href="https://profi.ru/profile/BodurovSE">Profi.ru</a>
+</div>
+<script src="https://profi.ru/jqs/widget/widget.js"></script>
+<!-- Profi.ru widget end -->
+
 </header>
 
 <div class="container">
 
-<h2 class="section-title">Мои услуги</h2>
-
-<div class="cards">
-
 <div class="card">
-<h3>Установка Windows</h3>
-<p>Полная установка и настройка системы.</p>
-<p class="price">от 1500 ₽</p>
-</div>
-
-<div class="card">
-<h3>Чистка ноутбука</h3>
-<p>Удаление пыли и замена термопасты.</p>
-<p class="price">от 2000 ₽</p>
-</div>
-
-<div class="card">
-<h3>Удаление вирусов</h3>
-<p>Очистка системы и защита данных.</p>
-<p class="price">от 1000 ₽</p>
+<h2>💼 Услуги</h2>
+<ul>
+<li>Ремонт компьютеров и ноутбуков</li>
+<li>Установка Windows 7 / 10 / 11</li>
+<li>Удаление вирусов</li>
+<li>Настройка программ и драйверов</li>
+<li>Чистка от пыли и замена термопасты</li>
+<li>Замена SSD, HDD, RAM</li>
+<li>Сборка и апгрейд ПК</li>
+<li>Восстановление данных</li>
+<li>Настройка Wi-Fi и принтеров</li>
+<li>Ремонт после залития</li>
+<li>Выезд на дом</li>
+</ul>
 </div>
 
 <div class="card">
-<h3>Замена комплектующих</h3>
-<p>SSD, RAM, клавиатуры, экраны.</p>
-<p class="price">от 1000 ₽</p>
+<h2>⭐ Почему выбирают меня</h2>
+<ul>
+<li>9 лет опыта</li>
+<li>Гарантия на работу</li>
+<li>Честная диагностика</li>
+<li>Быстрый выезд</li>
+<li>Работа под ключ</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📞 Контакты</h2>
+<p>Телефон: +7 XXX XXX XX XX</p>
+<p>Telegram: @yourtelegram</p>
+
+<a class="btn" href="https://t.me/yourtelegram">Связаться со мной</a>
 </div>
 
 </div>
-
-<br><br>
-
-<h2 class="section-title">Обо мне</h2>
-
-<div class="about">
-<p>
-Меня зовут Сомон. Я занимаюсь ремонтом компьютеров и ноутбуков более 8 лет.
-Выполняю диагностику, установку Windows, модернизацию ноутбуков, чистку от пыли,
-удаление вирусов и настройку программ. Работаю аккуратно и даю рекомендации по дальнейшей эксплуатации техники.
-</p>
-</div>
-
-</div>
-
-<section class="contact">
-<h2>Связаться со мной</h2>
-
-<p>Телефон: +7 989 115 70 04</p>
-<p>Telegram: @ВАШ_ТЕЛЕГРАМ</p>
-
-<br>
-
-<a class="btn" href="https://t.me/ВАШ_ТЕЛЕГРАМ">
-Написать сейчас
-</a>
-
-</section>
 
 <footer>
-© 2026 ТачСервис | Ремонт компьютеров и ноутбуков
+© 2026 ТачСервис — Все права защищены
 </footer>
 
 </body>
