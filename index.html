@@ -3,81 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сомон — ТачСервис</title>
+<title>Сомон — Ремонт компьютеров</title>
 
 <style>
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#f4f6f8;
-color:#222;
+font-family:Segoe UI, Arial;
+background:#0b1220;
+color:white;
 }
 
 header{
-background:linear-gradient(135deg,#0066cc,#00aaff);
-color:white;
-padding:70px 20px;
+background:linear-gradient(135deg,#2563eb,#06b6d4);
+padding:80px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:42px;
+font-size:44px;
 margin-bottom:10px;
 }
 
 header p{
-font-size:18px;
 max-width:800px;
 margin:auto;
+opacity:0.9;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:white;
+color:#0b1220;
+border-radius:10px;
+font-weight:bold;
+text-decoration:none;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:30px 20px;
 }
 
 .card{
-background:white;
+background:#111827;
 padding:20px;
-margin-bottom:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 h2{
-color:#0066cc;
+color:#38bdf8;
 margin-top:0;
 }
 
-ul{
-padding-left:20px;
+ul li{
+margin:6px 0;
 }
 
-li{
-margin-bottom:8px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 20px;
-background:#0066cc;
-color:white;
-text-decoration:none;
-border-radius:8px;
-margin-top:10px;
+img{
+width:100%;
+border-radius:12px;
+margin-top:12px;
 }
 
 footer{
 text-align:center;
 padding:20px;
-background:#222;
-color:white;
-margin-top:30px;
+background:#050914;
+color:#aaa;
 }
 
-.profi-widget{
-margin-top:15px;
+/* PROFI WIDGET RIGHT */
+.profi-fixed{
+position:fixed;
+right:15px;
+top:150px;
+width:320px;
+z-index:999;
+}
+
+@media(max-width:900px){
+.profi-fixed{
+display:none;
+}
 }
 </style>
 
@@ -89,36 +102,35 @@ margin-top:15px;
 <h1>Сомон — ТачСервис</h1>
 <p>
 Мастер по ремонту компьютеров и ноутбуков с опытом 9 лет.  
-Честная работа, гарантия и быстрый выезд на дом.
+Быстро, честно и с гарантией на работу.
 </p>
 
 <a class="btn" href="https://t.me/yourtelegram">Написать в Telegram</a>
 
-<!-- Profi.ru widget -->
-<div class="profi-widget" data-id="cfddc839598957ae248623647ec3a476" data-type="300x100">
-Powered by <a href="https://profi.ru/profile/BodurovSE">Profi.ru</a>
-</div>
-<script src="https://profi.ru/jqs/widget/widget.js"></script>
-<!-- Profi.ru widget end -->
-
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
 </header>
 
 <div class="container">
 
 <div class="card">
-<h2>💼 Услуги</h2>
+<h2>💻 Ремонт компьютеров</h2>
+<p>Диагностика и ремонт ноутбуков и ПК любой сложности.</p>
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+</div>
+
+<div class="card">
+<h2>🧰 Услуги</h2>
 <ul>
-<li>Ремонт компьютеров и ноутбуков</li>
-<li>Установка Windows 7 / 10 / 11</li>
+<li>Установка Windows 10 / 11</li>
 <li>Удаление вирусов</li>
-<li>Настройка программ и драйверов</li>
-<li>Чистка от пыли и замена термопасты</li>
-<li>Замена SSD, HDD, RAM</li>
-<li>Сборка и апгрейд ПК</li>
+<li>Чистка ноутбуков</li>
+<li>Замена SSD / RAM / HDD</li>
+<li>Сборка ПК</li>
 <li>Восстановление данных</li>
-<li>Настройка Wi-Fi и принтеров</li>
+<li>Настройка драйверов</li>
+<li>Настройка Wi-Fi</li>
 <li>Ремонт после залития</li>
-<li>Выезд на дом</li>
+<li>Апгрейд компьютеров</li>
 </ul>
 </div>
 
@@ -128,7 +140,7 @@ Powered by <a href="https://profi.ru/profile/BodurovSE">Profi.ru</a>
 <li>9 лет опыта</li>
 <li>Гарантия на работу</li>
 <li>Честная диагностика</li>
-<li>Быстрый выезд</li>
+<li>Быстрый выезд на дом</li>
 <li>Работа под ключ</li>
 </ul>
 </div>
@@ -138,13 +150,21 @@ Powered by <a href="https://profi.ru/profile/BodurovSE">Profi.ru</a>
 <p>Телефон: +7 XXX XXX XX XX</p>
 <p>Telegram: @yourtelegram</p>
 
-<a class="btn" href="https://t.me/yourtelegram">Связаться со мной</a>
+<a class="btn" href="https://t.me/yourtelegram">Связаться</a>
 </div>
 
+</div>
+
+<!-- PROFI WIDGET -->
+<div class="profi-fixed">
+<div class="profi-widget" data-id="cfddc839598957ae248623647ec3a476" data-type="300x100">
+Powered by <a href="https://profi.ru/profile/BodurovSE">Profi.ru</a>
+</div>
+<script src="https://profi.ru/jqs/widget/widget.js"></script>
 </div>
 
 <footer>
-© 2026 ТачСервис — Все права защищены
+© 2026 Сомон — ТачСервис
 </footer>
 
 </body>
